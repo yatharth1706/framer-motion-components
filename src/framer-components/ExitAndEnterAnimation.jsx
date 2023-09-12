@@ -5,7 +5,7 @@ function ExitAndEnterAnimation() {
   const [removeInnerCircle, setRemoveInnerCircle] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setRemoveInnerCircle(true), 10000);
+    setTimeout(() => setRemoveInnerCircle(true), 7000);
   });
 
   return (
@@ -15,11 +15,17 @@ function ExitAndEnterAnimation() {
           {removeInnerCircle === false && (
             <motion.div
               initial={{ opacity: 0, y: 0 }}
-              animate={{ opacity: 1, y: 40 }}
+              animate={{
+                opacity: 1,
+                y: 40,
+                scale: [null, 1.2, 0.5, 0.1, 1],
+                backgroundColor: [null, "#111111", "#12ab12", "#111111"],
+                borderRadius: [null, "40%", "10%", "100%"],
+              }}
               transition={{
                 duration: 5,
               }}
-              exit={{ opacity: 0, y: 1000 }}
+              exit={{ opacity: 0, y: 200 }}
               className="bg-red h-24 w-24 rounded-full"
             ></motion.div>
           )}
