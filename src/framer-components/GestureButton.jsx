@@ -7,14 +7,16 @@ function GestureButton() {
       <motion.button
         whileHover={{
           scale: 1.1,
-          backgroundColor: "#123123",
-          color: "#ffffff",
-          borderRadius: "0%",
+          backgroundColor: "#ffe098",
+          borderRadius: ["70%", "40%", "20%", "0%", "30%"],
+          transition: {
+            duration: 2,
+          },
         }}
         whileTap={{
           scale: 0.7,
         }}
-        className="bg-white p-2 rounded-full w-44 text-gray-700 font-bold"
+        className="bg-white p-2 rounded-lg w-44 text-gray-700 font-bold"
       >
         Submit
       </motion.button>

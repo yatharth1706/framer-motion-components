@@ -1,4 +1,5 @@
 import "./App.css";
+import DraggableDiv from "./framer-components/DraggableDiv";
 import ExitAndEnterAnimation from "./framer-components/ExitAndEnterAnimation";
 import GestureButton from "./framer-components/GestureButton";
 import ProgressBar from "./framer-components/ProgressBar";
@@ -11,9 +12,11 @@ function App() {
           Framer motion components
         </h1>
         {/* <ProgressBar /> */}
-        <ExitAndEnterAnimation />
+        {/* <ExitAndEnterAnimation />
 
-        <GestureButton />
+        <GestureButton /> */}
+
+        <DraggableDiv />
       </div>
     </>
   );
