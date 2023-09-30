@@ -18,7 +18,7 @@ function DraggableDiv() {
       className="w-44 h-44 rounded-full bg-white mt-20 mx-auto flex flex-col items-center justify-center"
       dragPropagation
     >
-      <h2>Circle</h2>
+      <h2 className="bg-transparent text-gray-800">Circle</h2>
     </motion.div>
   );
 }
