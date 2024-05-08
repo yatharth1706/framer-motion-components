@@ -18,7 +18,7 @@ const Variant2 = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: i * 2,
+      delay: i * 0.2,
     },
   }),
   hide: {
@@ -35,6 +35,7 @@ function EmojisAnimation() {
   return (
     <div>
       <motion.div
+        initial={false}
         animate={showEmojis ? "show" : "hide"}
         className="mt-10 flex flex-col items-center space-y-6 justify-center"
       >
